@@ -10,7 +10,9 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Optional;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
+@RequestMapping("/api/v1")
 public class ConfigController {
 
     private ConfigRepository configRepository;
@@ -19,20 +21,20 @@ public class ConfigController {
         this.configRepository = configRepository;
     }
 
-    @GetMapping("/api/v1/configs/{id}")
+    @GetMapping("/configs/{id}")
     public ResponseEntity<Config> getConfig(@PathVariable Long id) {
         return configRepository.findById(id)
                 .map(config -> ResponseEntity.ok().body(config))
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    @GetMapping("/rest/Configs")
+    @GetMapping("/configs")
     //public ResponseEntity<Iterable<Config>> getConfigs() {
     public Iterable<Config> getConfigs() {
         return configRepository.findAll();
     }
 
-    @PostMapping("/rest/Config")
+    @PostMapping("/configs")
     public ResponseEntity<Config> createConfig(@RequestBody Config Config) {
         Config newConfig = configRepository.save(Config);
         try {
@@ -42,13 +44,13 @@ public class ConfigController {
         }
     }
 
-    @PutMapping("/rest/Config/{id}")
+    @PutMapping("/configs/{id}")
     public ResponseEntity<Config> updateConfig(@RequestBody Config Config, @PathVariable Long id) {
         Config.setId(id);
         return ResponseEntity.ok().body(configRepository.save(Config));
     }
 
-    @PutMapping("/rest/proper/Config/{id}")
+    @PutMapping("/configs/{id}/proper")
     public ResponseEntity<Config> updateConfigProper(@RequestBody Config Config, @PathVariable Long id, @RequestHeader("If-Match") Long ifMatch) {
         Optional<Config> existingConfig = configRepository.findById(id);
         if (existingConfig.isPresent()) {
@@ -63,7 +65,7 @@ public class ConfigController {
         }
     }
 
-    @DeleteMapping("/rest/Config/{id}")
+    @DeleteMapping("/config/{id}")
     public ResponseEntity deleteConfig(@PathVariable Long id) {
         configRepository.deleteById(id);
         return ResponseEntity.ok().build();

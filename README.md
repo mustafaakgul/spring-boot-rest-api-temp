@@ -4,6 +4,8 @@
 * https://medium.com/the-resonant-web/spring-boot-2-0-project-structure-and-best-practices-part-2-7137bdcba7d3
 * https://malshani-wijekoon.medium.com/spring-boot-folder-structure-best-practices-18ef78a81819
 
+* Use properties files for all static string in the project. For instance CrossOrigin(origins = "${cross.origin.url}") instead of CrossOrigin(origins = "http://localhost:4200")
+
 ## Architecture
 * Presentation Layer
   * Authentication
