@@ -1,4 +1,5 @@
 ## Best Practices
+* https://medium.com/javarevisited/10-spring-boot-best-practices-to-learn-in-10-minutes-b4ea307b2a84
 * https://dev.to/jazzybruno/spring-boot-project-folder-structure-12oe
 * https://www.javatpoint.com/spring-boot-architecture
 * https://medium.com/the-resonant-web/spring-boot-2-0-project-structure-and-best-practices-part-2-7137bdcba7d3
