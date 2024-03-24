@@ -1,3 +1,4 @@
+# Spring Boot REST API template for rapid project setup
 ## Best Practices
 * https://medium.com/javarevisited/10-spring-boot-best-practices-to-learn-in-10-minutes-b4ea307b2a84
 * https://dev.to/jazzybruno/spring-boot-project-folder-structure-12oe
