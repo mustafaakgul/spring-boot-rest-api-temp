@@ -15,17 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 import java.util.Map;
 
-@ControllerAdvice
-public class UserController {
-
-    @ExceptionHandler(value = UserNotFoundException.class)
-    public ResponseEntity<User> exception(UserNotFoundException exception) {
-        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-    }
-}
-
 @RestController
-public class UserTempController {
+public class UserController {
 
     private static Map<String, User> users = new HashMap<>();
     static {
@@ -35,7 +26,12 @@ public class UserTempController {
         users.put(temp2.getId(), temp2);
     }
 
-    @RequestMapping("/users/{id}", method = RequestMethod.PUT)
+    @ExceptionHandler(value = UserNotFoundException.class)
+    public ResponseEntity<User> exception(UserNotFoundException exception) {
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
+    @RequestMapping(path = "/users/{id}", method = RequestMethod.PUT)
     public ResponseEntity<Object> updateUser(@PathVariable String id, @RequestBody User user) {
         if (!users.containsKey(id)) {
             throw new UserNotFoundException();
