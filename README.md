@@ -37,6 +37,65 @@
 * REST Testing: Postman, CURL, IntelliJ HTTP Client
 * Use Cloud Deploy
 
+## Architecture & Structure
+* Presentation Layer
+  * Authentication
+  * JSON Transformation
+* Business Layer
+  * Business Logic
+  * Validation
+  * Authorization
+* Persistence Layer
+  * Storage Logic
+* Database Layer
+  * Actual Database
+* API Gateway Feature
+  * Centralized API Management
+  * Rate Limiting
+  * Authentication and Authorization
+  * Caching
+  * Logging and Monitoring
+
+## Naming Conventions
+* TODO://
+
+## Standards
+* Clean Code
+* SOLID Principles
+* DRY Principle
+* KISS Principle
+* Design Patterns
+* Refactoring
+* TDD
+* Documenting Code
+* Code Review
+* Pair Programming
+* Continuous Integration
+* Continuous Deployment
+* Code Quality
+* Code Coverage
+* Code Analysis
+* Code Smells
+* Code Duplication
+* Code Complexity
+* Code Maintainability
+* Code Reliability
+* Code Testability
+* Code Security
+* Code Style
+* Code Conventions
+* Code Documentation
+* Code Comments
+* Code Formatting
+* Code Linting
+* Use Environment Variables
+* Use Profiling
+* Use Dev Prod Staging Environments
+* Use Custom Response Model
+* Use Comments
+* Use Custom Exceptions
+* Use Pagination
+
 ## Best Practices
 * https://medium.com/javarevisited/10-spring-boot-best-practices-to-learn-in-10-minutes-b4ea307b2a84
 * https://dev.to/jazzybruno/spring-boot-project-folder-structure-12oe
@@ -150,65 +209,7 @@
 * Flow: Client Request -> DispatcherServler -> Handler Mapping -> Controller -> Service -> Repository and Data Access -> Database -> Response Handling -> DispatcherServler Response
 * Response Entity/Builder: https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/http/ResponseEntity.html
 
-## Architecture & Structure
-* Presentation Layer
-  * Authentication
-  * JSON Transformation
-* Business Layer
-  * Business Logic
-  * Validation
-  * Authorization
-* Persistence Layer
-  * Storage Logic
-* Database Layer
-  * Actual Database
-* API Gateway Feature
-  * Centralized API Management
-  * Rate Limiting
-  * Authentication and Authorization
-  * Caching
-  * Logging and Monitoring
-
-## Naming Conventions
-
-## Standards
-* Clean Code
-* SOLID Principles
-* DRY Principle
-* KISS Principle
-* Design Patterns
-* Refactoring
-* TDD
-* Documenting Code
-* Code Review
-* Pair Programming
-* Continuous Integration
-* Continuous Deployment
-* Code Quality
-* Code Coverage
-* Code Analysis
-* Code Smells
-* Code Duplication
-* Code Complexity
-* Code Maintainability
-* Code Reliability
-* Code Testability
-* Code Security
-* Code Style
-* Code Conventions
-* Code Documentation
-* Code Comments
-* Code Formatting
-* Code Linting
-* Use Environment Variables
-* Use Profiling
-* Use Dev Prod Staging Environments
-* Use Custom Response Model
-* Use Comments
-* Use Custom Exceptions
-* Use Pagination
-
-## Java & Spring Boot Best Practices & Naming Conventions
+## Java & Spring Boot Best Practices & Naming Conventions Refs
 * https://google.github.io/styleguide/javaguide.html
 * https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html
 * https://www.geeksforgeeks.org/best-practices-for-naming-api-endpoints-in-a-restful-architecture/
