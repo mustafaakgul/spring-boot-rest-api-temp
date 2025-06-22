@@ -208,6 +208,7 @@
 * Skills: Internet, OS, Data Structures, Algorithms, Language, Version Control, Framework, Database, API, Testing, CI/CD, Containerization, Web Servers
 * Flow: Client Request -> DispatcherServler -> Handler Mapping -> Controller -> Service -> Repository and Data Access -> Database -> Response Handling -> DispatcherServler Response
 * Response Entity/Builder: https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/http/ResponseEntity.html
+* Name Methods in a Descriptive Way: "createAccount" (GetBy{Feature}) instead of "create" for many creative methods can be existing. For Instance: Do not (Controller: getById, create, getAll, update, delete, Repo: deleteById, save, findbyId, findAll)
 
 ## Java & Spring Boot Best Practices & Naming Conventions Refs
 * https://google.github.io/styleguide/javaguide.html
