@@ -1,4 +1,42 @@
-# Spring Boot REST API template for rapid project setup
+# Spring Boot REST API Template for Project Setup
+* Description: Project Template for Spring Boot REST API Application
+
+## Technical Stack
+* IDE: IntelliJ IDEA
+* AI LLM: ChatGPT, Claude, etc.
+* AI Code: Copilot
+* Java
+* Maven
+* Spring Framework
+* Spring Boot 3.x
+* Spring Data JPA
+* Spring Security
+* Spring Web
+* Spring Boot Actuator
+* Spring Cloud
+* System Design
+* DevOps
+* Git
+* Unit Testing for Every Unit: JUnit, Mockito
+* Integration Testing: Correlation Test Between Components
+* Container Testing: Test Containers
+* RESTful Web Services: Stateless, Resource-Oriented, Uniform Interface, Standard HTTP
+* Event: Kafka
+* Queue: RabbitMQ
+* Containerization: Docker
+* API Documentation: Swagger
+* Monitoring: Prometheus, Grafana
+* Security: JWT Authentication, OAuth(2)
+* CI/CD: GitHub Actions
+* Database: PostgreSQL
+* ORM: Hibernate
+* Kubernetes
+* Architecture: Microservices, Monolith
+* Cloud Platforms: AWS, Heroku, DigitalOcean
+* OpenAPI Specification
+* REST Testing: Postman, CURL, IntelliJ HTTP Client
+* Use Cloud Deploy
+
 ## Best Practices
 * https://medium.com/javarevisited/10-spring-boot-best-practices-to-learn-in-10-minutes-b4ea307b2a84
 * https://dev.to/jazzybruno/spring-boot-project-folder-structure-12oe
@@ -112,7 +150,7 @@
 * Flow: Client Request -> DispatcherServler -> Handler Mapping -> Controller -> Service -> Repository and Data Access -> Database -> Response Handling -> DispatcherServler Response
 * Response Entity/Builder: https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/http/ResponseEntity.html
 
-## Architecture
+## Architecture & Structure
 * Presentation Layer
   * Authentication
   * JSON Transformation
@@ -131,47 +169,9 @@
   * Caching
   * Logging and Monitoring
 
-## Technical Stack
-* IDE: IntelliJ IDEA
-* AI LLM: ChatGPT, Claude, etc.
-* AI Code: Copilot
-* Java
-* Maven
-* Spring Framework
-* Spring Boot 3.x
-* Spring Data JPA
-* Spring Security
-* Spring Web
-* Spring Boot Actuator
-* Spring Cloud
-* System Design
-* DevOps
-* Git
-* Unit Testing for Every Unit: JUnit, Mockito
-* Integration Testing: Correlation Test Between Components
-* Container Testing: Test Containers
-* RESTful Web Services: Stateless, Resource-Oriented, Uniform Interface, Standard HTTP
-* Event: Kafka
-* Queue: RabbitMQ
-* Containerization: Docker
-* API Documentation: Swagger
-* Monitoring: Prometheus, Grafana
-* Security: JWT Authentication, OAuth(2)
-* CI/CD: GitHub Actions
-* Database: PostgreSQL
-* ORM: Hibernate
-* Kubernetes
-* Architecture: Microservices, Monolith
-* Cloud Platforms: AWS, Heroku, DigitalOcean
-* OpenAPI Specification
-* REST Testing: Postman, CURL, IntelliJ HTTP Client
-* Use Cloud Deploy
-
-## Structure
-
 ## Naming Conventions
 
-## Best Practices & Standards
+## Standards
 * Clean Code
 * SOLID Principles
 * DRY Principle
