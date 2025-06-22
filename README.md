@@ -5,9 +5,18 @@
 * https://www.javatpoint.com/spring-boot-architecture
 * https://medium.com/the-resonant-web/spring-boot-2-0-project-structure-and-best-practices-part-2-7137bdcba7d3
 * https://malshani-wijekoon.medium.com/spring-boot-folder-structure-best-practices-18ef78a81819
-* Use POJOs (Plain Old Java Objects) for data transfer objects (DTOs) and entities.
+* https://docs.spring.io/spring-boot/reference/using/structuring-your-code.html
+* Reformat Code, Optimize Imports, Rearrange Code in IntelliJ IDEA, Empty Last Line
+* Code Linters
+* Code Formatters
+* Use .keep in Empty Folder
+* Use IDE Debugger for debugging.
+* AI CoPilot as: Agent, MCP Server, Pull Request, Code Review, Code Generation, Pair Programming, Team Member, Code Refactoring, Code Documentation, Code Testing, Code Debugging, Code Optimization, Understanding Code, Research.
+* Use POJOs (Plain Old Java Objects) for data transfer objects (DTOs) and entities. DTOs normally are created as POJOs.
+* Use Validations
 * Use wrapper classes for fundamental data types (e.g., Integer instead of int).
 * BigDecimal for monetary values instead of double or float in FinTech.
+* Use TODO: comments for unfinished tasks or features.
 * Use Health Check for application health monitoring. Spring Boot Actuator provides endpoints for health checks.
 * Metrics Collection: Use Micrometer for collecting application metrics.
 * Structured Logging: Use a structured logging framework. Application and physical logs like cpu.
@@ -16,6 +25,12 @@
 * Do not use @Autowired annotation for constructor injection. Use constructor directly.
 * Do not use wildcard imports.
 * Use command + shift + N to create scratch files in IntelliJ IDEA like properties, json, HTTP request, etc.
+* Prevent Race Condition, Transaction Locking
+* API Dev: Contract-First Approach (Talk to Business Unit), OpenAPI Spec, API Documentation, Code Generation, Maintability
+* MCP Server
+  * https://modelcontextprotocol.io/introduction
+  * https://github.com/modelcontextprotocol/servers/tree/main
+  * https://github.com/github/github-mcp-server?utm_campaign=mpu_june2025&utm_medium=email&utm_source=github
 * Database Naming Conventions:
   * Table Names: snake_case and plural (e.g., user_accounts)
   * Column Names: snake_case and singular (e.g., first_name)
@@ -85,6 +100,17 @@
   * User Guides
   * Inline Code Documentation: Javadoc for Java code.
   * Change Logs
+* Custom Response Model
+* Error Handling
+* Unit Testing
+* Port Clean: lsof -i:8091 -> kill -9 <PID>
+* Static Code Analysis: SonarQube, SonarLint Tools
+* Linting Tools Integration
+* AI Tools Integration in Daily Development
+* Kafka Integration for Event-Driven Architecture: Notification, Moment Notification for Fraud Cases, Logging, Analytics, Fraud, etc.
+* Skills: Internet, OS, Data Structures, Algorithms, Language, Version Control, Framework, Database, API, Testing, CI/CD, Containerization, Web Servers
+* Flow: Client Request -> DispatcherServler -> Handler Mapping -> Controller -> Service -> Repository and Data Access -> Database -> Response Handling -> DispatcherServler Response
+* Response Entity/Builder: https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/http/ResponseEntity.html
 
 ## Architecture
 * Presentation Layer
@@ -98,8 +124,17 @@
   * Storage Logic
 * Database Layer
   * Actual Database
+* API Gateway Feature
+  * Centralized API Management
+  * Rate Limiting
+  * Authentication and Authorization
+  * Caching
+  * Logging and Monitoring
 
 ## Technical Stack
+* IDE: IntelliJ IDEA
+* AI LLM: ChatGPT, Claude, etc.
+* AI Code: Copilot
 * Java
 * Maven
 * Spring Framework
@@ -129,7 +164,59 @@
 * Architecture: Microservices, Monolith
 * Cloud Platforms: AWS, Heroku, DigitalOcean
 * OpenAPI Specification
+* REST Testing: Postman, CURL, IntelliJ HTTP Client
+* Use Cloud Deploy
 
 ## Structure
 
 ## Naming Conventions
+
+## Best Practices & Standards
+* Clean Code
+* SOLID Principles
+* DRY Principle
+* KISS Principle
+* Design Patterns
+* Refactoring
+* TDD
+* Documenting Code
+* Code Review
+* Pair Programming
+* Continuous Integration
+* Continuous Deployment
+* Code Quality
+* Code Coverage
+* Code Analysis
+* Code Smells
+* Code Duplication
+* Code Complexity
+* Code Maintainability
+* Code Reliability
+* Code Testability
+* Code Security
+* Code Style
+* Code Conventions
+* Code Documentation
+* Code Comments
+* Code Formatting
+* Code Linting
+* Use Environment Variables
+* Use Profiling
+* Use Dev Prod Staging Environments
+* Use Custom Response Model
+* Use Comments
+* Use Custom Exceptions
+* Use Pagination
+
+## Java & Spring Boot Best Practices & Naming Conventions
+* https://google.github.io/styleguide/javaguide.html
+* https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html
+* https://www.geeksforgeeks.org/best-practices-for-naming-api-endpoints-in-a-restful-architecture/
+* https://medium.com/javarevisited/10-spring-boot-best-practices-to-learn-in-10-minutes-b4ea307b2a84
+* https://medium.com/@arunpandeycdac/a-developers-guide-to-java-programming-language-and-spring-boot-applications-best-practices-9e7adccb21ea
+* https://medium.com/@shubhapriya1998/java-coding-standard-f2101a167f88
+* https://github.com/spring-projects/spring-boot/wiki/Team-Practices
+* https://devguide.elering.ee/guides/architecture/project-structure-guide/
+* https://malshani-wijekoon.medium.com/spring-boot-folder-structure-best-practices-18ef78a81819
+* https://medium.com/@mrayandutta/java-naming-conventions-the-points-you-must-know-35421498f975
+* https://medium.com/@swarnava-code/java-naming-conventions-173d6e2d9bd4
