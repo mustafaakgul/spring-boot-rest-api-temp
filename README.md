@@ -12,7 +12,7 @@
 * Spring Data JPA
 * Spring Security
 * Spring Web
-* Spring Boot Actuator
+* Spring Boot Actuator: curl http://localhost:8080/actuator/health, curl http://localhost:8080/actuator
 * Spring Cloud
 * System Design
 * DevOps
@@ -23,7 +23,7 @@
 * RESTful Web Services: Stateless, Resource-Oriented, Uniform Interface, Standard HTTP
 * Event: Kafka
 * Queue: RabbitMQ
-* Containerization: Docker
+* Containerization: Docker, Docker Compose
 * API Documentation: Swagger
 * Monitoring: Prometheus, Grafana
 * Security: JWT Authentication, OAuth(2)
@@ -36,6 +36,16 @@
 * OpenAPI Specification
 * REST Testing: Postman, CURL, IntelliJ HTTP Client
 * Use Cloud Deploy
+* Unit Test: JUnit 5 (https://junit.org/junit5/)
+* Code Quality: SonarQube
+* Code Coverage: JaCoCo
+* Code Linting: SonarLint
+* Documentation: OpenAPI, JavaDoc
+* Logging
+* Monitoring
+* Caching
+* Deployment: Local, Docker, Kubernetes (K8s), Cloud (AWS, Azure, GCP)
+* Spring Hateoas
 
 ## Architecture & Structure
 * Presentation Layer
@@ -111,6 +121,8 @@
 * AI CoPilot as: Agent, MCP Server, Pull Request, Code Review, Code Generation, Pair Programming, Team Member, Code Refactoring, Code Documentation, Code Testing, Code Debugging, Code Optimization, Understanding Code, Research.
 * Use POJOs (Plain Old Java Objects) for data transfer objects (DTOs) and entities. DTOs normally are created as POJOs.
 * Use Validations
+* Performance Monitoring
+* Commit Message Standards: Fix Part
 * Use wrapper classes for fundamental data types (e.g., Integer instead of int).
 * BigDecimal for monetary values instead of double or float in FinTech.
 * Use TODO: comments for unfinished tasks or features.
@@ -120,10 +132,11 @@
 * Monitoring Setup: Use Prometheus and Grafana for monitoring and visualization.
 * Use properties files for all static string in the project. For instance CrossOrigin(origins = "${cross.origin.url}") instead of CrossOrigin(origins = "http://localhost:4200")
 * Do not use @Autowired annotation for constructor injection. Use constructor directly.
-* Do not use wildcard imports.
+* Do not use wildcard (*) imports.
 * Use command + shift + N to create scratch files in IntelliJ IDEA like properties, json, HTTP request, etc.
 * Prevent Race Condition, Transaction Locking
-* API Dev: Contract-First Approach (Talk to Business Unit), OpenAPI Spec, API Documentation, Code Generation, Maintability
+* API Dev: Contract-First Approach (Talk to Business Unit), OpenAPI Spec, API Documentation, Code Generation, Maintainability
+* Spring Security: Use UserDetails and UserDetailsService implement for Grants, loadUserByUsername, etc.
 * MCP Server
   * https://modelcontextprotocol.io/introduction
   * https://github.com/modelcontextprotocol/servers/tree/main
@@ -149,6 +162,8 @@
   * Use HTTPS
   * Implement Rate Limiting: API Gateway to Centralize or Custom Middleware
   * Proper Error Handling: Controller Advice and Global Exception Handling (Controller Advice Uygun Modulde Yakalıyor ve Ona Gore Mesaj Donuyor, Her Yerde try catch Kullanıma Gerek Kalmıyor)
+    * https://medium.com/@bubu.tripathy/effective-exception-handling-6c0ce043d96f
+    * https://medium.com/@sharmapraveen91/handle-exceptions-in-spring-boot-a-guide-to-clean-code-principles-e8a9d56cafe8
   * Use Caching: @Cacheable, @CacheEvict, @CachePut That Provider Memory Saving etc.
   * Implement Pagination
   * Use API Versioning: URL Versioning or Header Versioning
@@ -209,6 +224,30 @@
 * Flow: Client Request -> DispatcherServler -> Handler Mapping -> Controller -> Service -> Repository and Data Access -> Database -> Response Handling -> DispatcherServler Response
 * Response Entity/Builder: https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/http/ResponseEntity.html: Use ResponseEntity with Generic Response Instead of Return Model
 * Name Methods in a Descriptive Way: "createAccount" (GetBy{Feature}) instead of "create" for many creative methods can be existing. For Instance: Do not (Controller: getById, create, getAll, update, delete, Repo: deleteById, save, findbyId, findAll)
+* Use Makefile
+* Logging Best Practices:
+  * Use SLF4J with Logback for logging.
+  * Use structured logging for better log analysis.
+  * Avoid logging sensitive information.
+  * Use appropriate log levels (DEBUG, INFO, WARN, ERROR).
+  * Implement log rotation and retention policies.
+  * Use correlation IDs for tracing requests across services.
+  * Use ELK Stack (Elasticsearch, Logstash, Kibana) for advanced logging and monitoring.
+  * References:
+    * https://medium.com/@bolot.89/logging-best-practices-in-modern-applications-0f3e64380db2
+    * https://medium.com/@AlexanderObregon/the-mechanics-of-logging-in-spring-boot-7e4b743626fd
+    * https://medium.com/@AlexanderObregon/enhancing-logging-with-log-and-slf4j-in-spring-boot-applications-f7e70c6e4cc7
+    * https://docs.spring.io/spring-boot/reference/features/logging.html#features.logging
+    * https://www.baeldung.com/spring-boot-structured-logging
+    * https://www.baeldung.com/java-structured-logging
+    * https://spring.io/blog/2024/08/23/structured-logging-in-spring-boot-3-4
+* Use Aspect Oriented Programming (AOP) for cross-cutting concerns like logging, security, transaction management, tracing, validation, caching, performance tracking, call lazy entity, etc.
+* Preparing Production:
+  * https://devcenter.heroku.com/articles/preparing-a-spring-boot-app-for-production-on-heroku
+* Use meaningful name instead of underscore (_) variable names. (savedTrx instead of _trx)
+* Use service layer for business logic not infrastructure concerns like exception handling, logging, etc.
+* Reduce boilerplate code by using annotations, 
+* For DTO Handling great layer is controller (Maybe sometimes service) layer
 
 ## Java & Spring Boot Best Practices & Naming Conventions Refs
 * https://google.github.io/styleguide/javaguide.html
