@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping(path = "/api/v1/config")
 public class ConfigController {
 
     private ConfigRepository configRepository;
