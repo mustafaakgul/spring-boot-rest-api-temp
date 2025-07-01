@@ -1,0 +1,24 @@
+## Saved results in .idea folder in project root
+
+### GET request with a header
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc0OTkyNTcxMywiZXhwIjoxNzQ5OTYxNzEzfQ.KPPdxotFj88H90YKc73TRWSWRu7rTqnF-LhX5vrMnCUInn66B6hqr8oJo8Tm92g--O7S8l4awkuNI6xBvW-AlA
+
+### Register
+POST http://localhost:8080/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "email": "admin",
+  "password": "admin"
+}
+
+### Login
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin",
+  "password": "admin"
+}
