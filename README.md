@@ -66,6 +66,10 @@
   * Caching
   * Logging and Monitoring
 
+## Structure
+* Concept Folder is Singular: config, security, etc
+* Files are Singular and CamelCase
+
 ## Naming Conventions
 * TODO://
 
@@ -113,16 +117,19 @@
 * https://medium.com/the-resonant-web/spring-boot-2-0-project-structure-and-best-practices-part-2-7137bdcba7d3
 * https://malshani-wijekoon.medium.com/spring-boot-folder-structure-best-practices-18ef78a81819
 * https://docs.spring.io/spring-boot/reference/using/structuring-your-code.html
-* Reformat Code, Optimize Imports, Rearrange Code in IntelliJ IDEA, Empty Last Line
+* Use Modular Programming for reusable modules
+* Reformat Code, Optimize Imports, Rearrange Code in IntelliJ IDEA, 
+* Empty Last Line .class Files
 * Code Linters
 * Code Formatters
 * Use .keep in Empty Folder
+* Use Singular Folder Naming for Irregular Nouns Dirty and Java Community Standards
 * Use IDE Debugger for debugging.
 * AI CoPilot as: Agent, MCP Server, Pull Request, Code Review, Code Generation, Pair Programming, Team Member, Code Refactoring, Code Documentation, Code Testing, Code Debugging, Code Optimization, Understanding Code, Research.
 * Use POJOs (Plain Old Java Objects) for data transfer objects (DTOs) and entities. DTOs normally are created as POJOs.
 * Use Validations
 * Performance Monitoring
-* Commit Message Standards: Fix Part
+* Commit Message Standards: Fix Part, Add Update Fix Refactor Remove Release Merge Hotfix Revert Initial
 * Use wrapper classes for fundamental data types (e.g., Integer instead of int).
 * BigDecimal for monetary values instead of double or float in FinTech.
 * Use TODO: comments for unfinished tasks or features.
