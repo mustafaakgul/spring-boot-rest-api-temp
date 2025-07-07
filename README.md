@@ -111,6 +111,18 @@
 * Use Pagination
 
 ## Best Practices
+* Star Project on GitHub
+* Share on GitHub & Remove git Cache - git rm -r --cached .idea
+* Add GitHub Topics for Repository
+* Add GitHub Description for Repository
+* Add GitHub License for Repository in GitHub
+* Project Naming Standards: x-y, Lowercase with Dashes
+* Add .gitignore File in IDE or Generating Web
+* Add README.md: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+* Add Yourself as a Watcher
+* Commit Message Standards: Fix Part, Add Update Fix Refactor Remove Release Merge Hotfix Revert Initial
+* Create Documentation: https://www.jetbrains.com/help/pycharm/documenting-source-code.html
+* Use // TODO: for Empty Sections
 * https://medium.com/javarevisited/10-spring-boot-best-practices-to-learn-in-10-minutes-b4ea307b2a84
 * https://dev.to/jazzybruno/spring-boot-project-folder-structure-12oe
 * https://www.javatpoint.com/spring-boot-architecture
