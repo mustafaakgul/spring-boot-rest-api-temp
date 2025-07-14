@@ -1,11 +1,11 @@
-package org.concept.springbootrestapitemp.services;
+package org.concept.springbootrestapitemp.service;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.concept.springbootrestapitemp.config.JwtService;
-import org.concept.springbootrestapitemp.dtos.requests.LoginRequest;
-import org.concept.springbootrestapitemp.dtos.requests.RegisterRequest;
-import org.concept.springbootrestapitemp.repositories.UserRepository;
-import org.concept.springbootrestapitemp.models.User;
+import org.concept.springbootrestapitemp.dto.request.LoginRequest;
+import org.concept.springbootrestapitemp.dto.request.RegisterRequest;
+import org.concept.springbootrestapitemp.repository.UserRepository;
+import org.concept.springbootrestapitemp.model.User;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

@@ -1,9 +1,9 @@
-package org.concept.springbootrestapitemp.controllers;
+package org.concept.springbootrestapitemp.controller;
 
-import org.concept.springbootrestapitemp.dtos.requests.LoginRequest;
-import org.concept.springbootrestapitemp.dtos.requests.RegisterRequest;
-import org.concept.springbootrestapitemp.services.AuthService;
-import org.concept.springbootrestapitemp.models.User;
+import org.concept.springbootrestapitemp.dto.request.LoginRequest;
+import org.concept.springbootrestapitemp.dto.request.RegisterRequest;
+import org.concept.springbootrestapitemp.service.AuthService;
+import org.concept.springbootrestapitemp.model.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

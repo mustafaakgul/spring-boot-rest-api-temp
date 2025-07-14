@@ -1,7 +1,7 @@
-package org.concept.springbootrestapitemp.controllers;
+package org.concept.springbootrestapitemp.controller;
 
-import org.concept.springbootrestapitemp.models.Config;
-import org.concept.springbootrestapitemp.repositories.ConfigRepository;
+import org.concept.springbootrestapitemp.model.Config;
+import org.concept.springbootrestapitemp.repository.ConfigRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,4 +1,4 @@
-package org.concept.springbootrestapitemp.exceptions;
+package org.concept.springbootrestapitemp.exception;
 
 public class UserNotFoundException extends RuntimeException {
 

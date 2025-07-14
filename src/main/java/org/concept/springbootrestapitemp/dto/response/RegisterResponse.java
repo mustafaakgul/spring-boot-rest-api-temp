@@ -1,4 +1,4 @@
-package org.concept.springbootrestapitemp.dtos.responses;
+package org.concept.springbootrestapitemp.dto.response;
 
 public class RegisterResponse {
 

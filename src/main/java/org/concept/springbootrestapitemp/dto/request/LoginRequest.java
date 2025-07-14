@@ -1,4 +1,4 @@
-package org.concept.springbootrestapitemp.dtos.requests;
+package org.concept.springbootrestapitemp.dto.request;
 
 public class LoginRequest {
 

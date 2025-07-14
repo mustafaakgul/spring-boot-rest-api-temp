@@ -1,6 +1,6 @@
-package org.concept.springbootrestapitemp.repositories;
+package org.concept.springbootrestapitemp.repository;
 
-import org.concept.springbootrestapitemp.models.Config;
+import org.concept.springbootrestapitemp.model.Config;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

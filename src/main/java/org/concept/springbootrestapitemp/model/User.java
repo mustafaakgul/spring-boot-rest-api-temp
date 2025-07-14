@@ -1,4 +1,4 @@
-package org.concept.springbootrestapitemp.models;
+package org.concept.springbootrestapitemp.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

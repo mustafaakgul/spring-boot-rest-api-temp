@@ -1,6 +1,6 @@
 package org.concept.springbootrestapitemp.config;
 
-import org.concept.springbootrestapitemp.repositories.UserRepository;
+import org.concept.springbootrestapitemp.repository.UserRepository;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
