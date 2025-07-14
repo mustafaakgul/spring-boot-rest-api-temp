@@ -1,6 +1,4 @@
-package org.concept.springbootrestapitemp.dtos.requests;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
+package org.concept.springbootrestapitemp.dto.request;
 
 public class RegisterRequest {
 

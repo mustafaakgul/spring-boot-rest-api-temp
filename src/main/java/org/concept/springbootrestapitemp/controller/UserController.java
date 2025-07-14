@@ -1,22 +1,16 @@
-package org.concept.springbootrestapitemp.controllers;
+package org.concept.springbootrestapitemp.controller;
 
-import org.concept.springbootrestapitemp.exceptions.UserNotFoundException;
-import org.concept.springbootrestapitemp.models.User;
-import org.concept.springbootrestapitemp.repositories.UserRepository;
+import org.concept.springbootrestapitemp.exception.UserNotFoundException;
+import org.concept.springbootrestapitemp.model.User;
+import org.concept.springbootrestapitemp.repository.UserRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping(path = "api/v1/users")
