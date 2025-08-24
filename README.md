@@ -1,7 +1,13 @@
-# Spring Boot REST API Template for Project Setup
+# Product::Spring Boot REST API Template for Project Setup
 * Description: Project Template for Spring Boot REST API Application
 
-## Technical Stack
+## To Run Application
+* Build: mvn clean package
+* Local: ./mvnw spring-boot:run
+* Dev: https://dashboard.heroku.com/apps/{APP}
+* Production: Gradle: java -jar build/libs/org-fintech-budget-0.1.0.jar, Maven: java -jar target/org-fintech-budget-0.1.0.jar
+
+## Technology Stack
 * IDE: IntelliJ IDEA
 * AI LLM: ChatGPT, Claude, etc.
 * AI Code: Copilot
@@ -165,7 +171,7 @@
   * Column Names: snake_case and singular (e.g., first_name)
   * https://blog.api-fiddle.com/posts/naming-conventions-in-postgresql
   * https://www.geeksforgeeks.org/postgresql/postgresql-naming-conventions/
-* HTTP Status Codes: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status#client_error_responses
+* HTTP Status Codes: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status
 * HTTP Methods:
   * GET: Retrieve data
   * POST: Create new resource
